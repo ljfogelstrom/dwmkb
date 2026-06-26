@@ -16,7 +16,7 @@ OBJ = $(addprefix ${BUILD}/,\
 	disk.o \
 	ram.o)
 
-TARGET = killerbar
+TARGET = dwmkb
 
 all: ${BUILD} ${TARGET}
 
@@ -33,7 +33,7 @@ clean:
 	rm -rf ${BUILD} ${TARGET}
 
 install:
-	chmod 755 killerbar
-	cp -f killerbar /usr/local/bin/killerbar
+	chmod 755 dwmkb
+	cp -f dwmkb /usr/local/bin/dwmkb
 
 .PHONY: all clean install
